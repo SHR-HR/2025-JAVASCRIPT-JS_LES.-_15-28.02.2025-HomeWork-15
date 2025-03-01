@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание: Работа с DOM</title>
+    <link rel="stylesheet" href="Tasks.css">
+</head>
+<body>
+
+    <h1>Работа с DOM</h1>
+
+    <!-- 🔹 Задание 1: Карточки товаров -->
+    <section class="task">
+        <h2>Изменение карточки товара</h2>
+        <div class="products">
+            <div id="product1" class="product">
+                <h3>Товар 1</h3>
+                <p>Цена: <span>1000 тг.</span></p>
+                <img src="product1.jpg" alt="Товар 1">
+                <button onclick="changeProduct('product1', 'Новый товар 1', '1500 тг.', 'new-product1.jpg')">Изменить товар 1</button>
+            </div>
+            <div id="product2" class="product">
+                <h3>Товар 2</h3>
+                <p>Цена: <span>2000 тг.</span></p>
+                <img src="product2.jpg" alt="Товар 2">
+                <button onclick="changeProduct('product2', 'Новый товар 2', '2500 тг.', 'new-product2.jpg')">Изменить товар 2</button>
+            </div>
+            <div id="product3" class="product">
+                <h3>Товар 3</h3>
+                <p>Цена: <span>3000 тг.</span></p>
+                <img src="product3.jpg" alt="Товар 3">
+                <button onclick="changeProduct('product3', 'Новый товар 3', '3500 тг.', 'new-product3.jpg')">Изменить товар 3</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔹 Задание 2: Кнопка "Выбрать всё" -->
+    <section class="task">
+        <h2>Выбрать всё</h2>
+        <button onclick="changeAllBackground()">Выбрать всё</button>
+    </section>
+
+    <!-- 🔹 Задание 3: Слайдер изображений -->
+    <section class="task">
+        <h2>Слайдер изображений</h2>
+        <div class="slider">
+            <button onclick="prevImage()">⬅️</button>
+            <img id="sliderImage" src="T3-1.jpg" alt="Фото">
+            <button onclick="nextImage()">➡️</button>
+        </div>
+    </section>
+
+    <!-- 🔹 Задание 4: Форма добавления товаров -->
+    <section class="task">
+        <h2>Добавление товара</h2>
+        <form id="productForm">
+            <input type="text" id="productName" placeholder="Название">
+            <input type="number" id="productPrice" placeholder="Цена">
+            <button type="submit">Добавить</button>
+        </form>
+        <ul id="productList"></ul>
+    </section>
+
+    <script src="Task-PW.js"></script>
+</body>
+</html>
